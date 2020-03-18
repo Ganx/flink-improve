@@ -12,6 +12,7 @@
     <modules>
         <module>StreamingFileSink</module>
         <module>flinkTable</module>
+        <module>flink-examples</module>
     </modules>
 
     <properties>
@@ -108,6 +109,12 @@
         <dependency>
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-table-planner_2.11</artifactId>
+            <version>${flink.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-table-planner-blink_2.11</artifactId>
             <version>${flink.version}</version>
         </dependency>
 

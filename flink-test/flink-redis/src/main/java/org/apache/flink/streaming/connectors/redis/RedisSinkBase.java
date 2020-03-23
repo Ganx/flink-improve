@@ -5,9 +5,11 @@ import org.apache.flink.streaming.api.functions.sink.RichSinkFunction;
 
 import org.apache.flink.streaming.connectors.redis.common.config.FlinkJedisConfigBase;
 import org.apache.flink.streaming.connectors.redis.common.container.RedisCommandsContainer;
+import org.apache.flink.streaming.connectors.redis.common.container.RedisCommandsContainerBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.IOException;
 import java.util.Objects;
 
 public abstract class RedisSinkBase <IN> extends RichSinkFunction<IN> {
@@ -52,6 +54,23 @@ public abstract class RedisSinkBase <IN> extends RichSinkFunction<IN> {
      */
     @Override
     public void open(Configuration parameters) throws Exception {
-        super.open(parameters);
+        try {
+            this.redisCommandsContainer = RedisCommandsContainerBuilder.build(this.flinkJedisConfigBase);
+            this.redisCommandsContainer.open();
+        } catch (Exception e) {
+            LOG.error("Redis has not been properly initialized: ", e);
+            throw e;
+        }
+    }
+
+    /**
+     * Closes commands container.
+     * @throws IOException if command container is unable to close.
+     */
+    @Override
+    public void close() throws IOException {
+        if (redisCommandsContainer != null) {
+            redisCommandsContainer.close();
+        }
     }
 }

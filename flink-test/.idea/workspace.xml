@@ -2,34 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cda7b7fb-afd8-44ae-ad23-1e73cd531d73" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseAppendTableSink.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseCommitter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseRetractTableSink.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseRowMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseSink.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseSinkBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseTableSinkMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseTupleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseWriteAheadSink.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/MutationActions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-iterativeStream/readme" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-iterativeStream/src/main/java/com/cj/flink/test/IterateExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisClusterConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisConfigBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisSentinelConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkSedisPoolConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkShardedJedisPoolConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/RedisClusterContainer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/RedisCommandsContainer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/RedisCommandsContainerBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/RedisContainer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/ShardedRedisContainer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-redis/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/RedisSinkBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/RedisSinkBase.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/StreamingFileSink/target/" />
@@ -63,8 +36,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkShardedJedisPoolConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-426">
-              <caret line="10" column="70" lean-forward="true" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
+            <state relative-caret-position="334">
+              <caret line="29" column="7" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="29" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/Util.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/RedisSinkBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="594">
+              <caret line="49" column="7" lean-forward="true" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,7 +69,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/RedisCommandsContainerBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
+            <state relative-caret-position="-90">
               <caret line="76" column="75" selection-start-line="76" selection-start-column="75" selection-end-line="76" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -85,25 +79,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/ShardedRedisContainer.java">
+        <entry file="file://$PROJECT_DIR$/flink-redis/pom.xml">
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1893" />
+            <state relative-caret-position="-97" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisSentinelConfig.java">
+        <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/ShardedRedisContainer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-171">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="152">
+              <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisClusterConfig.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="235">
@@ -113,26 +105,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.4.2/jedis-2.4.2.jar!/redis/clients/jedis/HostAndPort.class">
+        <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisPoolConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/RedisClusterContainer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1176" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/RedisContainer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="938">
-              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+            <state relative-caret-position="2572">
+              <caret line="202" column="5" selection-start-line="202" selection-start-column="5" selection-end-line="202" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -141,10 +117,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.4.2/jedis-2.4.2.jar!/redis/clients/jedis/Jedis.class">
+        <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.4.2/jedis-2.4.2.jar!/redis/clients/jedis/HostAndPort.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="110" column="23" selection-start-line="110" selection-start-column="23" selection-end-line="110" selection-end-column="23" />
+            <state relative-caret-position="76">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -184,7 +160,6 @@
         <option value="$PROJECT_DIR$/flink-examples/flink-example-streaming/src/main/java/com/cj/flink/streaming/blink/readme" />
         <option value="$PROJECT_DIR$/flink-redis/pom.xml" />
         <option value="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/RedisCommandsContainer.java" />
-        <option value="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/RedisSinkBase.java" />
         <option value="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisClusterConfig.java" />
         <option value="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisConfigBase.java" />
         <option value="$PROJECT_DIR$/flink-hbase/pom.xml" />
@@ -207,12 +182,13 @@
         <option value="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisPoolConfig.java" />
         <option value="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisSentinelConfig.java" />
         <option value="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkSedisPoolConfig.java" />
-        <option value="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkShardedJedisPoolConfig.java" />
         <option value="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/RedisContainer.java" />
         <option value="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/SedisContainer.java" />
         <option value="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/RedisClusterContainer.java" />
         <option value="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/ShardedRedisContainer.java" />
         <option value="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/RedisCommandsContainerBuilder.java" />
+        <option value="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkShardedJedisPoolConfig.java" />
+        <option value="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/RedisSinkBase.java" />
       </list>
     </option>
   </component>
@@ -245,8 +221,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="62" />
-    <option name="y" value="9" />
+    <option name="x" value="-178" />
     <option name="width" value="1632" />
     <option name="height" value="1022" />
   </component>
@@ -878,19 +853,19 @@
       <updated>1584439159591</updated>
       <workItem from="1584439162193" duration="78000" />
       <workItem from="1584496513105" duration="8485000" />
-      <workItem from="1584585747414" duration="27635000" />
+      <workItem from="1584585747414" duration="28689000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36782000" />
+    <option name="totallyTimeSpent" value="37836000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-172" y="13" width="1632" height="1022" extended-state="0" />
+    <frame x="-178" y="0" width="1632" height="1022" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8569536" visible="true" weight="0.28307888" />
-      <window_info id="Structure" order="1" sideWeight="0.14304636" side_tool="true" visible="true" weight="0.28307888" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8576687" visible="true" weight="0.31361324" />
+      <window_info id="Structure" order="1" sideWeight="0.14233129" side_tool="true" visible="true" weight="0.31361324" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
@@ -898,7 +873,7 @@
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.1261574" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.056712963" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -956,9 +931,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseRowMapper.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseSinkBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -1130,23 +1102,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/RedisSinkBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.9.1/flink-streaming-java_2.11-1.9.1.jar!/org/apache/flink/streaming/api/datastream/DataStream.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="379">
@@ -1217,16 +1172,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisPoolConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="202" column="5" selection-start-line="202" selection-start-column="5" selection-end-line="202" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.4.2/jedis-2.4.2.jar!/redis/clients/jedis/JedisSentinelPool.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -1266,11 +1211,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/ShardedRedisContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1893" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/SedisContainer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1351">
@@ -1296,16 +1236,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkShardedJedisPoolConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-426">
-          <caret line="10" column="70" lean-forward="true" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisSentinelConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-171">
@@ -1323,16 +1253,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/RedisCommandsContainerBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="76" column="75" selection-start-line="76" selection-start-column="75" selection-end-line="76" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.4.2/jedis-2.4.2.jar!/redis/clients/jedis/HostAndPort.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -1344,6 +1264,66 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
           <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisPoolConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2572">
+          <caret line="202" column="5" selection-start-line="202" selection-start-column="5" selection-end-line="202" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/ShardedRedisContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/RedisCommandsContainerBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-90">
+          <caret line="76" column="75" selection-start-line="76" selection-start-column="75" selection-end-line="76" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-redis/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-97" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkShardedJedisPoolConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="29" column="7" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="29" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/RedisSinkBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="49" column="7" lean-forward="true" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

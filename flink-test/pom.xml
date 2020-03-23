@@ -13,6 +13,9 @@
         <module>StreamingFileSink</module>
         <module>flinkTable</module>
         <module>flink-examples</module>
+        <module>flink-redis</module>
+        <module>flink-hbase</module>
+        <module>flink-iterativeStream</module>
     </modules>
 
     <properties>

@@ -2,18 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cda7b7fb-afd8-44ae-ad23-1e73cd531d73" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/flink-examples/flink-example-streaming/readme" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-examples/flink-example-streaming/src/main/java/com/cj/flink/streaming/async/AsyncIOExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-examples/flink-example-streaming/src/main/java/com/cj/flink/streaming/blink/LookUpAsyncTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-examples/flink-example-streaming/src/main/java/com/cj/flink/streaming/blink/MyAsyncLookupFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-examples/flink-example-streaming/src/main/java/com/cj/flink/streaming/blink/RedisAsyncLookupTableSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-examples/flink-example-streaming/src/main/java/com/cj/flink/streaming/blink/readme" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-examples/flink-example-streaming/src/main/java/com/cj/flink/streaming/redis/AsyncIOSideTableJoinRedis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-examples/flink-example-streaming/src/main/java/com/cj/flink/streaming/redis/ObjectDeserializationSchema.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-examples/flink-example-streaming/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseAppendTableSink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseCommitter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseRetractTableSink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseRowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseSink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseSinkBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseTableSinkMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseTupleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseWriteAheadSink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/MutationActions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-iterativeStream/readme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-iterativeStream/src/main/java/com/cj/flink/test/IterateExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisClusterConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisConfigBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisSentinelConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkSedisPoolConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkShardedJedisPoolConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/RedisClusterContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/RedisCommandsContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/RedisCommandsContainerBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/RedisContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/ShardedRedisContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-redis/src/main/resources/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flinkTable/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flinkTable/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
@@ -22,6 +37,9 @@
     <ignored path="$PROJECT_DIR$/flinkTable/target/" />
     <ignored path="$PROJECT_DIR$/flink-examples/flink-example-streaming/target/" />
     <ignored path="$PROJECT_DIR$/flink-examples/target/" />
+    <ignored path="$PROJECT_DIR$/flink-redis/target/" />
+    <ignored path="$PROJECT_DIR$/flink-hbase/target/" />
+    <ignored path="$PROJECT_DIR$/flink-iterativeStream/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,10 +52,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flink-examples/flink-example-streaming/src/main/java/com/cj/flink/streaming/redis/AsyncIOSideTableJoinRedis.java">
+        <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkSedisPoolConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="68" column="58" selection-start-line="68" selection-start-column="58" selection-end-line="68" selection-end-column="58" />
+            <state relative-caret-position="418">
+              <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkShardedJedisPoolConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-426">
+              <caret line="10" column="70" lean-forward="true" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -46,38 +73,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.9.1/flink-streaming-java_2.11-1.9.1.jar!/org/apache/flink/streaming/api/functions/async/RichAsyncFunction.class">
+        <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/RedisCommandsContainerBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="108" column="20" selection-start-line="108" selection-start-column="20" selection-end-line="108" selection-end-column="20" />
-            </state>
-          </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flink-examples/flink-example-streaming/src/main/java/com/cj/flink/streaming/blink/readme">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flink-examples/flink-example-streaming/src/main/java/com/cj/flink/streaming/blink/LookUpAsyncTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="87" column="28" selection-start-line="87" selection-start-column="28" selection-end-line="87" selection-end-column="28" />
+            <state relative-caret-position="273">
+              <caret line="76" column="75" selection-start-line="76" selection-start-column="75" selection-end-line="76" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,69 +85,68 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-connector-kafka_2.11/1.9.1/flink-connector-kafka_2.11-1.9.1.jar!/org/apache/flink/streaming/connectors/kafka/FlinkKafkaProducer011.class">
+        <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/ShardedRedisContainer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="-1893" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisSentinelConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-171">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/flink-examples/flink-example-streaming/src/main/java/com/cj/flink/streaming/blink/RedisAsyncLookupTableSource.java">
+        <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisClusterConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="235">
+              <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.4.2/jedis-2.4.2.jar!/redis/clients/jedis/HostAndPort.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/RedisClusterContainer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1176" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/RedisContainer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="938">
+              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1137#1138#0" expanded="true" />
-                <element signature="e#1164#1165#0" expanded="true" />
-                <element signature="e#1510#1511#0" expanded="true" />
-                <element signature="e#1537#1538#0" expanded="true" />
-                <element signature="e#2310#2311#0" expanded="true" />
-                <element signature="e#2354#2355#0" expanded="true" />
-                <element signature="e#2695#2696#0" expanded="true" />
-                <element signature="e#2781#2782#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flink-examples/flink-example-streaming/src/main/java/com/cj/flink/streaming/blink/MyAsyncLookupFunction.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.4.2/jedis-2.4.2.jar!/redis/clients/jedis/Jedis.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1970#1971#0" expanded="true" />
-                <element signature="e#2032#2033#0" expanded="true" />
-                <element signature="e#2241#2242#0" expanded="true" />
-                <element signature="e#2285#2286#0" expanded="true" />
-                <element signature="e#2620#2621#0" expanded="true" />
-                <element signature="e#2700#2701#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="263">
+              <caret line="110" column="23" selection-start-line="110" selection-start-column="23" selection-end-line="110" selection-end-column="23" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-common/1.9.1/flink-table-common-1.9.1.jar!/org/apache/flink/table/functions/AsyncTableFunction.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flink-examples/flink-example-streaming/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
-            </state>
-          </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
         </entry>
       </file>
     </leaf>
@@ -156,9 +154,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>setChainingStrategy</find>
+      <find>getTransformation</find>
+      <find>add</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -167,16 +173,46 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/flinkTable/src/main/java/com/flink/common/utils/RandomStringGenerator.java" />
-        <option value="$PROJECT_DIR$/flink-examples/flink-example-streaming/src/main/java/com/cj/flink/streaming/async/AsyncIOExample.java" />
         <option value="$PROJECT_DIR$/flink-examples/flink-example-streaming/src/main/java/com/cj/flink/streaming/redis/ObjectDeserializationSchema.java" />
         <option value="$PROJECT_DIR$/flink-examples/flink-example-streaming/src/main/java/com/cj/flink/streaming/redis/AsyncIOSideTableJoinRedis.java" />
         <option value="$PROJECT_DIR$/flink-examples/flink-example-streaming/readme" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/flink-examples/flink-example-streaming/src/main/java/com/cj/flink/streaming/blink/readme" />
         <option value="$PROJECT_DIR$/flink-examples/flink-example-streaming/src/main/java/com/cj/flink/streaming/blink/RedisAsyncLookupTableSource.java" />
         <option value="$PROJECT_DIR$/flink-examples/flink-example-streaming/pom.xml" />
         <option value="$PROJECT_DIR$/flink-examples/flink-example-streaming/src/main/java/com/cj/flink/streaming/blink/MyAsyncLookupFunction.java" />
         <option value="$PROJECT_DIR$/flink-examples/flink-example-streaming/src/main/java/com/cj/flink/streaming/blink/LookUpAsyncTest.java" />
+        <option value="$PROJECT_DIR$/flink-examples/flink-example-streaming/src/main/java/com/cj/flink/streaming/blink/readme" />
+        <option value="$PROJECT_DIR$/flink-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/RedisCommandsContainer.java" />
+        <option value="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/RedisSinkBase.java" />
+        <option value="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisClusterConfig.java" />
+        <option value="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisConfigBase.java" />
+        <option value="$PROJECT_DIR$/flink-hbase/pom.xml" />
+        <option value="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseSinkBase.java" />
+        <option value="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseAppendTableSink.java" />
+        <option value="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseClient.java" />
+        <option value="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseCommitter.java" />
+        <option value="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseMapper.java" />
+        <option value="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseRetractTableSink.java" />
+        <option value="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseRowMapper.java" />
+        <option value="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseTableSinkMapper.java" />
+        <option value="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseTupleMapper.java" />
+        <option value="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseWriteAheadSink.java" />
+        <option value="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/MutationActions.java" />
+        <option value="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseSink.java" />
+        <option value="$PROJECT_DIR$/flink-examples/flink-example-streaming/src/main/java/com/cj/flink/streaming/async/AsyncIOExample.java" />
+        <option value="$PROJECT_DIR$/flink-iterativeStream/readme" />
+        <option value="$PROJECT_DIR$/flink-iterativeStream/src/main/java/com/cj/flink/test/RandomFibonacciSource.java" />
+        <option value="$PROJECT_DIR$/flink-iterativeStream/src/main/java/com/cj/flink/test/IterateExample.java" />
+        <option value="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisPoolConfig.java" />
+        <option value="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisSentinelConfig.java" />
+        <option value="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkSedisPoolConfig.java" />
+        <option value="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkShardedJedisPoolConfig.java" />
+        <option value="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/RedisContainer.java" />
+        <option value="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/SedisContainer.java" />
+        <option value="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/RedisClusterContainer.java" />
+        <option value="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/ShardedRedisContainer.java" />
+        <option value="$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/RedisCommandsContainerBuilder.java" />
       </list>
     </option>
   </component>
@@ -193,11 +229,11 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="flinkTable" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="flink-redis" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="flinkTable" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="flink-redis" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
         <path>
@@ -209,14 +245,16 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="296" />
-    <option name="y" value="26" />
+    <option name="x" value="62" />
+    <option name="y" value="9" />
     <option name="width" value="1632" />
     <option name="height" value="1022" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <flattenPackages ProjectPane="false" />
+      <hideEmptyPackages ProjectPane="false" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -322,26 +360,432 @@
               <item name="cj" type="462c0819:PsiDirectoryNode" />
               <item name="flink" type="462c0819:PsiDirectoryNode" />
               <item name="streaming" type="462c0819:PsiDirectoryNode" />
-              <item name="blink" type="462c0819:PsiDirectoryNode" />
+              <item name="async" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
               <item name="flink-test" type="462c0819:PsiDirectoryNode" />
-              <item name="flink-examples" type="462c0819:PsiDirectoryNode" />
-              <item name="flink-example-streaming" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-hbase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-test" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-hbase" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-test" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-hbase" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-test" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-hbase" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-test" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-hbase" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org.apache.flink.streaming.connectors.hbase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-test" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-iterativeStream" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-test" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-iterativeStream" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-test" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-iterativeStream" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-test" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-iterativeStream" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-test" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-iterativeStream" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-test" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-iterativeStream" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="cj" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-test" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-iterativeStream" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="cj" type="462c0819:PsiDirectoryNode" />
               <item name="flink" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-test" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-iterativeStream" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="cj" type="462c0819:PsiDirectoryNode" />
+              <item name="flink" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-test" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-redis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-test" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-test" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-test" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-test" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-test" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-test" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="flink" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-test" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="flink" type="462c0819:PsiDirectoryNode" />
               <item name="streaming" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-test" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="flink" type="462c0819:PsiDirectoryNode" />
+              <item name="streaming" type="462c0819:PsiDirectoryNode" />
+              <item name="connectors" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-test" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="flink" type="462c0819:PsiDirectoryNode" />
+              <item name="streaming" type="462c0819:PsiDirectoryNode" />
+              <item name="connectors" type="462c0819:PsiDirectoryNode" />
               <item name="redis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
               <item name="flink-test" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="flink" type="462c0819:PsiDirectoryNode" />
+              <item name="streaming" type="462c0819:PsiDirectoryNode" />
+              <item name="connectors" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-test" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="flink" type="462c0819:PsiDirectoryNode" />
+              <item name="streaming" type="462c0819:PsiDirectoryNode" />
+              <item name="connectors" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-test" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="flink" type="462c0819:PsiDirectoryNode" />
+              <item name="streaming" type="462c0819:PsiDirectoryNode" />
+              <item name="connectors" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="container" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-test" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-test" type="462c0819:PsiDirectoryNode" />
               <item name="StreamingFileSink" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-test" type="462c0819:PsiDirectoryNode" />
+              <item name="StreamingFileSink" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-test" type="462c0819:PsiDirectoryNode" />
+              <item name="StreamingFileSink" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-test" type="462c0819:PsiDirectoryNode" />
+              <item name="StreamingFileSink" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-test" type="462c0819:PsiDirectoryNode" />
+              <item name="StreamingFileSink" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-test" type="462c0819:PsiDirectoryNode" />
+              <item name="StreamingFileSink" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="flink" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.flink:flink-streaming-java_2.11:1.9.1" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.flink:flink-streaming-java_2.11:1.9.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="flink-streaming-java_2.11-1.9.1.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.flink:flink-streaming-java_2.11:1.9.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="flink-streaming-java_2.11-1.9.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.flink:flink-streaming-java_2.11:1.9.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="flink-streaming-java_2.11-1.9.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.flink:flink-streaming-java_2.11:1.9.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="flink-streaming-java_2.11-1.9.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="flink" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.flink:flink-streaming-java_2.11:1.9.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="flink-streaming-java_2.11-1.9.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="flink" type="462c0819:PsiDirectoryNode" />
+              <item name="streaming" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.flink:flink-streaming-java_2.11:1.9.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="flink-streaming-java_2.11-1.9.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="flink" type="462c0819:PsiDirectoryNode" />
+              <item name="streaming" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.flink:flink-streaming-java_2.11:1.9.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="flink-streaming-java_2.11-1.9.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="flink" type="462c0819:PsiDirectoryNode" />
+              <item name="streaming" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="transformations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.hadoop:hadoop-auth:3.0.0" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.hadoop:hadoop-auth:3.0.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="hadoop-auth-3.0.0.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.hadoop:hadoop-auth:3.0.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="hadoop-auth-3.0.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.hadoop:hadoop-auth:3.0.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="hadoop-auth-3.0.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.hadoop:hadoop-auth:3.0.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="hadoop-auth-3.0.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.hadoop:hadoop-auth:3.0.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="hadoop-auth-3.0.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.hadoop:hadoop-auth:3.0.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="hadoop-auth-3.0.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
+              <item name="authentication" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -353,7 +797,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/flink-examples/flink-example-streaming/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -362,7 +806,17 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\stu\flink-improve\flink-test\flink-examples\flink-example-streaming\src\main\java\com\cj\flink\streaming\blink" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.apache.flink.streaming.connectors.redis.common.container" />
+      <recent name="org.apache.flink.streaming.connectors.redis.common" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\stu\flink-improve\flink-test\flink-hbase\src\main\java\org.apache.flink.streaming.connectors.hbase" />
+      <recent name="D:\stu\flink-improve\flink-test\flink-redis\src\main\resources" />
+      <recent name="D:\stu\flink-improve\flink-test\flink-examples\flink-example-streaming\src\main\java\com\cj\flink\streaming\blink" />
       <recent name="D:\stu\flink-improve\flink-test\flink-examples\flink-example-streaming\src\main\resources" />
     </key>
   </component>
@@ -378,7 +832,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.IterateExample">
     <configuration name="AsyncIOExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cj.flink.streaming.async.AsyncIOExample" />
       <module name="flinkexamplestreaming" />
@@ -392,8 +846,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="IterateExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cj.flink.test.IterateExample" />
+      <module name="flinkiterativeStream" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cj.flink.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.IterateExample" />
         <item itemvalue="Application.AsyncIOExample" />
       </list>
     </recent_temporary>
@@ -409,30 +877,28 @@
       <option name="presentableId" value="Default" />
       <updated>1584439159591</updated>
       <workItem from="1584439162193" duration="78000" />
-      <workItem from="1584496513105" duration="7814000" />
+      <workItem from="1584496513105" duration="8485000" />
+      <workItem from="1584585747414" duration="27635000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8476000" />
+    <option name="totallyTimeSpent" value="36782000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="219" y="16" width="1632" height="1022" extended-state="0" />
+    <frame x="-172" y="13" width="1632" height="1022" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29198474" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8569536" visible="true" weight="0.28307888" />
+      <window_info id="Structure" order="1" sideWeight="0.14304636" side_tool="true" visible="true" weight="0.28307888" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Image Layers" order="6" />
-      <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Messages" weight="0.3298611" />
-      <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24537037" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.1261574" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -443,12 +909,16 @@
       <window_info anchor="bottom" id="CheckStyle" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.47337964" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.2824074" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Spring" order="15" />
+      <window_info anchor="bottom" id="Java Enterprise" order="16" />
+      <window_info anchor="bottom" id="Messages" order="17" weight="0.3298611" />
+      <window_info anchor="right" id="Bean Validation" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.088422395" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.06615776" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -459,251 +929,421 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/flinkTable/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flink-test.iml">
+    <entry file="file://$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseRowMapper.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-api-java-bridge_2.11/1.9.1/flink-table-api-java-bridge_2.11-1.9.1.pom">
+    <entry file="file://$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseSinkBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseTableSinkMapper.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-api-java/1.9.1/flink-table-api-java-1.9.1.pom">
+    <entry file="file://$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseTupleMapper.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flinkTable/src/main/java/com/flink/common/utils/RandomStringGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flink-examples/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.9.1/flink-streaming-java_2.11-1.9.1.jar!/org/apache/flink/streaming/api/checkpoint/ListCheckpointed.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.9.1/flink-streaming-java_2.11-1.9.1-tests.jar!/org/apache/flink/streaming/api/functions/ListSourceContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
-          <folding>
-            <element signature="e#1318#1319#0" expanded="true" />
-            <element signature="e#1350#1351#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.9.1/flink-streaming-java_2.11-1.9.1.jar!/org/apache/flink/streaming/api/functions/source/SourceFunction.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="32" column="15" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-core/1.9.1/flink-core-1.9.1.jar!/org/apache/flink/util/ExecutorUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flink-examples/flink-example-streaming/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flink-examples/flink-example-streaming/src/main/resources/logback.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-171" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.9.1/flink-streaming-java_2.11-1.9.1.jar!/org/apache/flink/streaming/api/datastream/AsyncDataStream.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="36" column="71" selection-start-line="36" selection-start-column="60" selection-end-line="36" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-core/1.9.1/flink-core-1.9.1.jar!/org/apache/flink/api/common/serialization/SimpleStringSchema.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="18" column="31" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-core/1.9.1/flink-core-1.9.1.jar!/org/apache/flink/api/common/serialization/DeserializationSchema.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-connector-kafka-0.10_2.11/1.9.1/flink-connector-kafka-0.10_2.11-1.9.1.jar!/org/apache/flink/streaming/connectors/kafka/FlinkKafkaConsumer010.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="41" column="62" selection-start-line="41" selection-start-column="62" selection-end-line="41" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flink-examples/flink-example-streaming/src/main/java/com/cj/flink/streaming/async/AsyncIOExample.java">
+    <entry file="file://$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseWriteAheadSink.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1291#1292#0" expanded="true" />
-            <element signature="e#1321#1322#0" expanded="true" />
-            <element signature="e#1839#1840#0" expanded="true" />
-            <element signature="e#1859#1860#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.4/json-lib-2.4.jar!/net/sf/json/JSONObject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flink-examples/flink-example-streaming/src/main/java/com/cj/flink/streaming/redis/ObjectDeserializationSchema.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#587#588#0" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#689#690#0" expanded="true" />
-            <element signature="e#716#717#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flink-examples/flink-example-streaming/readme">
+    <entry file="file://$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/MutationActions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+          <caret line="36" column="62" lean-forward="true" selection-start-line="36" selection-start-column="62" selection-end-line="36" selection-end-column="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="108" column="20" selection-start-line="108" selection-start-column="20" selection-end-line="108" selection-end-column="20" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flink-examples/flink-example-streaming/src/main/java/com/cj/flink/streaming/blink/readme">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flink-examples/flink-example-streaming/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-common/1.9.1/flink-table-common-1.9.1.jar!/org/apache/flink/table/functions/AsyncTableFunction.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.9.1/flink-streaming-java_2.11-1.9.1.jar!/org/apache/flink/streaming/api/datastream/DataStreamSink.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.9.1/flink-streaming-java_2.11-1.9.1.jar!/org/apache/flink/streaming/api/functions/async/RichAsyncFunction.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.9.1/flink-streaming-java_2.11-1.9.1.jar!/org/apache/flink/streaming/api/transformations/SideOutputTransformation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="14" column="37" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.9.1/flink-streaming-java_2.11-1.9.1.jar!/org/apache/flink/streaming/api/operators/ChainingStrategy.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-hbase/src/main/java/org.apache.flink.streaming.connectors.hbase/HBaseSink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2311#2312#0" expanded="true" />
+            <element signature="e#2370#2371#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-core/1.9.1/flink-core-1.9.1.jar!/org/apache/flink/api/dag/Transformation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.9.1/flink-streaming-java_2.11-1.9.1.jar!/org/apache/flink/streaming/api/transformations/SinkTransformation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/flink-examples/flink-example-streaming/src/main/java/com/cj/flink/streaming/redis/AsyncIOSideTableJoinRedis.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="68" column="58" selection-start-line="68" selection-start-column="58" selection-end-line="68" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-931">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-connector-kafka_2.11/1.9.1/flink-connector-kafka_2.11-1.9.1.jar!/org/apache/flink/streaming/connectors/kafka/FlinkKafkaProducer011.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-core/1.9.1/flink-core-1.9.1.jar!/org/apache/flink/core/io/InputSplitSource.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="133">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flink-examples/flink-example-streaming/src/main/java/com/cj/flink/streaming/blink/LookUpAsyncTest.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-core/1.9.1/flink-core-1.9.1.jar!/org/apache/flink/api/common/io/InputFormat.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="87" column="28" selection-start-line="87" selection-start-column="28" selection-end-line="87" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="133">
+          <caret line="17" column="72" selection-start-line="17" selection-start-column="72" selection-end-line="17" selection-end-column="72" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flink-examples/flink-example-streaming/src/main/java/com/cj/flink/streaming/blink/MyAsyncLookupFunction.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-core/1.9.1/flink-core-1.9.1.jar!/org/apache/flink/api/common/io/RichInputFormat.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1970#1971#0" expanded="true" />
-            <element signature="e#2032#2033#0" expanded="true" />
-            <element signature="e#2241#2242#0" expanded="true" />
-            <element signature="e#2285#2286#0" expanded="true" />
-            <element signature="e#2620#2621#0" expanded="true" />
-            <element signature="e#2700#2701#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="133">
+          <caret line="14" column="78" lean-forward="true" selection-start-line="14" selection-start-column="78" selection-end-line="14" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-core/1.9.1/flink-core-1.9.1.jar!/org/apache/flink/api/common/io/FileInputFormat.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="36" column="57" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/flink-examples/flink-example-streaming/src/main/java/com/cj/flink/streaming/blink/RedisAsyncLookupTableSource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
+        <state relative-caret-position="76">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-core/1.9.1/flink-core-1.9.1.jar!/org/apache/flink/api/common/io/DelimitedInputFormat.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-java/1.9.1/flink-java-1.9.1.jar!/org/apache/flink/api/java/io/TextInputFormat.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.9.1/flink-streaming-java_2.11-1.9.1.jar!/org/apache/flink/streaming/api/datastream/KeyedStream.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="71" column="89" selection-start-line="71" selection-start-column="89" selection-end-line="71" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.9.1/flink-streaming-java_2.11-1.9.1.jar!/org/apache/flink/streaming/api/datastream/SingleOutputStreamOperator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="26" column="56" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-examples/flink-example-streaming/src/main/java/com/cj/flink/streaming/blink/LookUpAsyncTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="35" column="48" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.9.1/flink-streaming-java_2.11-1.9.1.jar!/org/apache/flink/streaming/api/datastream/DataStreamSource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.9.1/flink-streaming-java_2.11-1.9.1.jar!/org/apache/flink/streaming/api/environment/StreamExecutionEnvironment.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="502" selection-start-line="502" selection-end-line="502" />
+          <folding>
+            <element signature="e#5948#5949#0" expanded="true" />
+            <element signature="e#6002#6003#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/RedisSinkBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1137#1138#0" expanded="true" />
-            <element signature="e#1164#1165#0" expanded="true" />
-            <element signature="e#1510#1511#0" expanded="true" />
-            <element signature="e#1537#1538#0" expanded="true" />
-            <element signature="e#2310#2311#0" expanded="true" />
-            <element signature="e#2354#2355#0" expanded="true" />
-            <element signature="e#2695#2696#0" expanded="true" />
-            <element signature="e#2781#2782#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.9.1/flink-streaming-java_2.11-1.9.1.jar!/org/apache/flink/streaming/api/datastream/DataStream.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="240" column="24" selection-start-line="240" selection-start-column="24" selection-end-line="240" selection-end-column="24" />
+          <folding>
+            <element signature="e#11324#11325#0" expanded="true" />
+            <element signature="e#11376#11377#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-examples/flink-example-streaming/src/main/java/com/cj/flink/streaming/async/AsyncIOExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="125" column="29" selection-start-line="125" selection-start-column="29" selection-end-line="125" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-iterativeStream/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-iterativeStream/src/main/java/com/cj/flink/test/RandomFibonacciSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="69" lean-forward="true" selection-start-line="16" selection-start-column="69" selection-end-line="16" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-iterativeStream/readme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="59" selection-start-column="59" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-iterativeStream/src/main/java/com/cj/flink/test/IterateExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.9.1/flink-streaming-java_2.11-1.9.1.jar!/org/apache/flink/streaming/api/datastream/IterativeStream.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisConfigBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisPoolConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="202" column="5" selection-start-line="202" selection-start-column="5" selection-end-line="202" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.4.2/jedis-2.4.2.jar!/redis/clients/jedis/JedisSentinelPool.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.4.2/jedis-2.4.2.jar!/redis/clients/jedis/JedisPool.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.4.2/jedis-2.4.2.jar!/redis/clients/jedis/BinaryClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="126" column="16" selection-start-line="126" selection-start-column="16" selection-end-line="126" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.4.2/jedis-2.4.2.jar!/redis/clients/jedis/Client.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="68" column="16" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="16" />
+          <folding>
+            <element signature="e#1846#1847#0" expanded="true" />
+            <element signature="e#1907#1908#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.4.2/jedis-2.4.2.jar!/redis/clients/jedis/Jedis.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="110" column="23" selection-start-line="110" selection-start-column="23" selection-end-line="110" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/ShardedRedisContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1893" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/SedisContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1351">
+          <caret line="126" column="9" lean-forward="true" selection-start-line="126" selection-start-column="9" selection-end-line="126" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/RedisClusterContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1176" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/RedisContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="938">
+          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkShardedJedisPoolConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-426">
+          <caret line="10" column="70" lean-forward="true" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisSentinelConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-171">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkSedisPoolConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/RedisCommandsContainerBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="76" column="75" selection-start-line="76" selection-start-column="75" selection-end-line="76" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.4.2/jedis-2.4.2.jar!/redis/clients/jedis/HostAndPort.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisClusterConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -760,7 +1400,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>flinkexamples</last-edited>
+          <last-edited>flinkredis</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

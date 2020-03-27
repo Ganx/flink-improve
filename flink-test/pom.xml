@@ -16,6 +16,8 @@
         <module>flink-redis</module>
         <module>flink-hbase</module>
         <module>flink-iterativeStream</module>
+        <module>flink-dim</module>
+        <module>flink-dim-java</module>
     </modules>
 
     <properties>
@@ -25,6 +27,7 @@
         <logback.verison>1.2.0</logback.verison>
         <scala.binary.version>2.11</scala.binary.version>
         <flink.version>1.9.1</flink.version>
+        <lombok.version>1.18.6</lombok.version>
         <flink-shaded-hadoop2.version>2.7.5-1.8.2</flink-shaded-hadoop2.version>
     </properties>
 
@@ -77,6 +80,12 @@
             <version>${logback.verison}</version>
         </dependency>
         <!-- log4j end -->
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+        </dependency>
 
         <!-- flink dependency start   -->
         <dependency>

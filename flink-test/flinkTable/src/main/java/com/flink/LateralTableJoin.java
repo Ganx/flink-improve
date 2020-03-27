@@ -65,46 +65,47 @@ public class LateralTableJoin {
     }
 
     int maxId = 100_000;
-    tEnv.createTemporaryView(
+    tEnv.registerDataStream(
         "fact_table",
         env.addSource(new FactTable(factTableRate, maxId)),
         "dim1, dim2, dim3, dim4, dim5, f_proctime.proctime");
-    tEnv.createTemporaryView(
+    tEnv.registerDataStream(
         "dim_table1",
         env.addSource(new DimensionTable(dimTableRate, maxId)),
         "id, col1, col2, col3, col4, col5, r_proctime.proctime");
-    tEnv.createTemporaryView(
+    tEnv.registerDataStream(
         "dim_table2",
         env.addSource(new DimensionTable(dimTableRate, maxId)),
         "id, col1, col2, col3, col4, col5, r_proctime.proctime");
-    tEnv.createTemporaryView(
+    tEnv.registerDataStream(
         "dim_table3",
         env.addSource(new DimensionTable(dimTableRate, maxId)),
         "id, col1, col2, col3, col4, col5, r_proctime.proctime");
-    tEnv.createTemporaryView(
+    tEnv.registerDataStream(
         "dim_table4",
         env.addSource(new DimensionTable(dimTableRate, maxId)),
         "id, col1, col2, col3, col4, col5, r_proctime.proctime");
-    tEnv.createTemporaryView(
+    tEnv.registerDataStream(
         "dim_table5",
         env.addSource(new DimensionTable(dimTableRate, maxId)),
         "id, col1, col2, col3, col4, col5, r_proctime.proctime");
 
     tEnv.registerFunction(
         "dimension_table1",
-        tEnv.from("dim_table1").createTemporalTableFunction("r_proctime", "id"));
+        tEnv.scan("dim_table1").createTemporalTableFunction("r_proctime", "id"));
     tEnv.registerFunction(
         "dimension_table2",
-        tEnv.from("dim_table2").createTemporalTableFunction("r_proctime", "id"));
+        tEnv.scan("dim_table2").createTemporalTableFunction("r_proctime", "id"));
     tEnv.registerFunction(
         "dimension_table3",
-        tEnv.from("dim_table3").createTemporalTableFunction("r_proctime", "id"));
+        tEnv.scan("dim_table3").createTemporalTableFunction("r_proctime", "id"));
     tEnv.registerFunction(
         "dimension_table4",
-        tEnv.from("dim_table4").createTemporalTableFunction("r_proctime", "id"));
+        tEnv.scan("dim_table4").createTemporalTableFunction("r_proctime", "id"));
     tEnv.registerFunction(
         "dimension_table5",
-        tEnv.from("dim_table5").createTemporalTableFunction("r_proctime", "id"));
+        tEnv.scan("dim_table5").createTemporalTableFunction("r_proctime", "id"));
+
 
     String query = loadQuery(queryFile);
     LOG.info(query);
@@ -112,7 +113,7 @@ public class LateralTableJoin {
     Table results = tEnv.sqlQuery(query);
 
     tEnv.toAppendStream(results, Row.class).addSink(new DiscardingSink<>());
-    env.execute();
+    env.execute("test");
   }
 
   static StreamExecutionEnvironment getEnvironment(ParameterTool tool) {

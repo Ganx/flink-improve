@@ -1,4 +1,3 @@
-package com.flink.dim
 
 import org.apache.flink.table.sources.StreamTableSource
 import com.flink.dim.CacheType.{CacheTypeBase, LRU}

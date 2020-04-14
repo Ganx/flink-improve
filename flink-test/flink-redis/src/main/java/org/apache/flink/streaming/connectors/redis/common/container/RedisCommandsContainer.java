@@ -1,5 +1,7 @@
 package org.apache.flink.streaming.connectors.redis.common.container;
 
+import org.apache.flink.streaming.connectors.redis.common.config.FlinkJedisConfigBase;
+
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.Map;
@@ -13,6 +15,7 @@ public interface RedisCommandsContainer extends Serializable {
      *
      * @throws Exception if the instance can not be opened properly
      */
+
     void open() throws Exception;
 
     /**

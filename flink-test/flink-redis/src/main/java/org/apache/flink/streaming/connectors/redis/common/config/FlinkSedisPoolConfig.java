@@ -17,7 +17,7 @@ public class FlinkSedisPoolConfig extends FlinkJedisConfigBase{
      * @param ttlSeconds value seconds ttl
      */
     private FlinkSedisPoolConfig(String sedisConfigPath, boolean isSharded, int ttlSeconds) {
-        super(1, 1, 1, 1);
+        super(1, 1, 1, 1, 0);
         Preconditions.checkArgument(sedisConfigPath != null, "Sedis config path can not be empty.");
         this.sedisConfigPath = sedisConfigPath;
         this.isSharded = isSharded;

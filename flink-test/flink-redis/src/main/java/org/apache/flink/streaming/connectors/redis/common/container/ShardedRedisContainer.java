@@ -25,9 +25,11 @@ import redis.clients.jedis.JedisCluster;
 import redis.clients.jedis.JedisShardInfo;
 import redis.clients.jedis.ShardedJedis;
 import redis.clients.jedis.ShardedJedisPool;
+import redis.clients.util.JedisURIHelper;
 
 import java.io.Closeable;
 import java.io.IOException;
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -85,6 +87,17 @@ public class ShardedRedisContainer implements RedisCommandsContainer, Closeable 
     		if (sinkJedisShardInfo.getPassword() != null && !"".equals(sinkJedisShardInfo.getPassword())) {
     			jedisShardInfo.setPassword(sinkJedisShardInfo.getPassword());
 			}
+
+			Class<? extends JedisShardInfo> clz = jedisShardInfo.getClass();
+			Field declaredField = null;
+			try {
+				declaredField = clz.getDeclaredField("db");
+				declaredField.setAccessible(true);
+				declaredField.set(jedisShardInfo, sinkJedisShardInfo.getDb());
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+
 			jedisShardInfos.add(jedisShardInfo);
 		}
 		LOG.info("Use {} init sharded jedis.", jedisShardInfos);

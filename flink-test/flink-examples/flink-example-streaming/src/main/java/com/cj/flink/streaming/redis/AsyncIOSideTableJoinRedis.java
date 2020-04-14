@@ -84,6 +84,7 @@ public class AsyncIOSideTableJoinRedis {
             Vertx vertx = Vertx.vertx(vo);
 
             redisClient = RedisClient.create(vertx, config);
+
         }
 
         @Override

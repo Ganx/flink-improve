@@ -28,6 +28,7 @@ public class FlinkShardedJedisPoolConfig extends FlinkJedisConfigBase{
      * @param minIdle the minimum number of idle objects to maintain in the pool
      * @throws NullPointerException if parameter {@code nodes} is {@code null}
      */
+
     private FlinkShardedJedisPoolConfig(List<SinkJedisShardInfo> shardInfos, int connectionTimeout, int maxRedirections,
                                         int maxTotal, int maxIdle, int minIdle) {
         super(connectionTimeout, maxTotal, maxIdle, minIdle);
@@ -149,6 +150,7 @@ public class FlinkShardedJedisPoolConfig extends FlinkJedisConfigBase{
         private int port;
         private String password;
         private String name;
+        private int db;
 
         public String getHostOrIp() {
             return hostOrIp;
@@ -171,6 +173,10 @@ public class FlinkShardedJedisPoolConfig extends FlinkJedisConfigBase{
         }
 
         public SinkJedisShardInfo(String hostOrIp, int port, String name, String password,int timeout) {
+            this(hostOrIp,port, name, password, timeout ,0);
+        }
+
+        public SinkJedisShardInfo(String hostOrIp, int port, String name, String password,int timeout,int db) {
             Util.checkArgument(hostOrIp != null && !"".equals(hostOrIp), "Sharded redis host or ip should not be empty");
             Util.checkArgument(port > 0, "Sharded redis host port must more than zero");
             Util.checkArgument(timeout > 0, "Sharded redis host port must more than zero");
@@ -179,6 +185,7 @@ public class FlinkShardedJedisPoolConfig extends FlinkJedisConfigBase{
             this.name = name;
             this.password = password;
             this.timeout = timeout;
+            this.db = db;
         }
 
         @Override
@@ -212,6 +219,9 @@ public class FlinkShardedJedisPoolConfig extends FlinkJedisConfigBase{
             return name;
         }
 
+        public int getDb() {
+            return db;
+        }
     }
 
     @Override

@@ -35,7 +35,7 @@
                   <resource>reference.conf</resource>
                 </transformer>
                 <transformer>
-                  <mainClass>cn.flink.test.Test</mainClass>
+                  <mainClass>cn.flink.com.test.Test</mainClass>
                 </transformer>
               </transformers>
               <relocations>

@@ -32,8 +32,8 @@ public class FlinkJedisClusterConfig extends FlinkJedisConfigBase{
      * @throws NullPointerException if parameter {@code nodes} is {@code null}
      */
     private FlinkJedisClusterConfig(Set<InetSocketAddress> nodes, int connectionTimeout, int maxRedirections,
-                                    int maxTotal, int maxIdle, int minIdle) {
-        super(connectionTimeout, maxTotal, maxIdle, minIdle);
+                                    int maxTotal, int maxIdle, int minIdle, int db) {
+        super(connectionTimeout, maxTotal, maxIdle, minIdle, db);
         Objects.requireNonNull(nodes, "Node information should be presented");
         Util.checkArgument(!nodes.isEmpty(), "Redis cluster hosts should not be empty");
         this.nodes = new HashSet<>(nodes);
@@ -72,6 +72,7 @@ public class FlinkJedisClusterConfig extends FlinkJedisConfigBase{
         private int maxTotal = GenericObjectPoolConfig.DEFAULT_MAX_TOTAL;
         private int maxIdle = GenericObjectPoolConfig.DEFAULT_MAX_IDLE;
         private int minIdle = GenericObjectPoolConfig.DEFAULT_MIN_IDLE;
+        private int db = 0;
 
         /**
          * Sets list of node.
@@ -142,13 +143,18 @@ public class FlinkJedisClusterConfig extends FlinkJedisConfigBase{
             return this;
         }
 
+        public Builder setDb(int db) {
+            this.db = db;
+            return this;
+        }
+
         /**
          * Builds JedisClusterConfig.
          *
          * @return JedisClusterConfig
          */
         public FlinkJedisClusterConfig build() {
-            return new FlinkJedisClusterConfig(nodes, timeout, maxRedirections, maxTotal, maxIdle, minIdle);
+            return new FlinkJedisClusterConfig(nodes, timeout, maxRedirections, maxTotal, maxIdle, minIdle,db);
         }
     }
 

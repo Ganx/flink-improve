@@ -16,6 +16,9 @@
  */
 package org.apache.flink.streaming.connectors.redis.common.container;
 
+import org.apache.flink.streaming.connectors.redis.common.config.FlinkJedisClusterConfig;
+
+import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import redis.clients.jedis.JedisCluster;
@@ -36,16 +39,23 @@ public class RedisClusterContainer implements RedisCommandsContainer, Closeable 
 
     private transient JedisCluster jedisCluster;
 
-    /**
-     * Initialize Redis command container for Redis cluster.
-     *
-     * @param jedisCluster JedisCluster instance
-     */
-    public RedisClusterContainer(JedisCluster jedisCluster) {
-        Objects.requireNonNull(jedisCluster, "Jedis cluster can not be null");
 
-        this.jedisCluster = jedisCluster;
-    }
+    public RedisClusterContainer(FlinkJedisClusterConfig jedisClusterConfig){
+		Objects.requireNonNull(jedisClusterConfig, "Redis cluster config should not be Null");
+
+		GenericObjectPoolConfig genericObjectPoolConfig = new GenericObjectPoolConfig();
+		genericObjectPoolConfig.setMaxIdle(jedisClusterConfig.getMaxIdle());
+		genericObjectPoolConfig.setMaxTotal(jedisClusterConfig.getMaxTotal());
+		genericObjectPoolConfig.setMinIdle(jedisClusterConfig.getMinIdle());
+
+		JedisCluster jedisCluster = new JedisCluster(jedisClusterConfig.getNodes(),
+				jedisClusterConfig.getConnectionTimeout(), jedisClusterConfig.getMaxRedirections());
+
+		Objects.requireNonNull(jedisCluster, "Jedis cluster can not be null");
+
+		jedisCluster.select(jedisClusterConfig.getDb());
+		this.jedisCluster = jedisCluster;
+	}
 
     @Override
     public void open() throws Exception {

@@ -1,5 +1,8 @@
 package org.apache.flink.streaming.connectors.redis.common.container;
 
+import org.apache.flink.streaming.connectors.redis.common.config.FlinkJedisSentinelConfig;
+
+import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import redis.clients.jedis.Jedis;
@@ -30,6 +33,7 @@ public class RedisContainer implements RedisCommandsContainer, Closeable {
     private transient JedisSentinelPool jedisSentinelPool;
     private transient Jedis currentJedis;
     private boolean isRelease;
+    private transient FlinkJedisSentinelConfig jedisSentinelConfig;
 
     /**
      * Use this constructor if to connect with single Redis server.
@@ -42,15 +46,24 @@ public class RedisContainer implements RedisCommandsContainer, Closeable {
         this.jedisSentinelPool = null;
     }
 
-    /**
-     * Use this constructor if Redis environment is clustered with sentinels.
-     *
-     * @param sentinelPool SentinelPool which actually manages Jedis instances
-     */
-    public RedisContainer(final JedisSentinelPool sentinelPool) {
-        Objects.requireNonNull(sentinelPool, "Jedis Sentinel Pool can not be null");
+
+    public RedisContainer(FlinkJedisSentinelConfig jedisSentinelConfig){
+        Objects.requireNonNull(jedisSentinelConfig, "Redis sentinel config should not be Null");
+
+        GenericObjectPoolConfig genericObjectPoolConfig = new GenericObjectPoolConfig();
+        genericObjectPoolConfig.setMaxIdle(jedisSentinelConfig.getMaxIdle());
+        genericObjectPoolConfig.setMaxTotal(jedisSentinelConfig.getMaxTotal());
+        genericObjectPoolConfig.setMinIdle(jedisSentinelConfig.getMinIdle());
+
+        JedisSentinelPool jedisSentinelPool = new JedisSentinelPool(jedisSentinelConfig.getMasterName(),
+                jedisSentinelConfig.getSentinels(), genericObjectPoolConfig,
+                jedisSentinelConfig.getConnectionTimeout(), jedisSentinelConfig.getPassword(),
+                jedisSentinelConfig.getDatabase());
+
+        Objects.requireNonNull(jedisSentinelPool, "Jedis Sentinel Pool can not be null");
         this.jedisPool = null;
-        this.jedisSentinelPool = sentinelPool;
+        this.jedisSentinelPool = jedisSentinelPool;
+        this.jedisSentinelConfig = jedisSentinelConfig;
     }
 
     @Override
@@ -135,6 +148,9 @@ public class RedisContainer implements RedisCommandsContainer, Closeable {
             } else {
                 currentJedis = jedisPool.getResource();
             }
+        }
+        if (jedisSentinelConfig != null){
+            currentJedis.select(jedisSentinelConfig.getDb());
         }
         return currentJedis;
     }

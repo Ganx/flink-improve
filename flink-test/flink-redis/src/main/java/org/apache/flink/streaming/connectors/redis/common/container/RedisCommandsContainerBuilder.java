@@ -67,16 +67,7 @@ public class RedisCommandsContainerBuilder {
      * @throws NullPointerException if jedisClusterConfig is null
      */
     public static RedisCommandsContainer build(FlinkJedisClusterConfig jedisClusterConfig) {
-        Objects.requireNonNull(jedisClusterConfig, "Redis cluster config should not be Null");
-
-        GenericObjectPoolConfig genericObjectPoolConfig = new GenericObjectPoolConfig();
-        genericObjectPoolConfig.setMaxIdle(jedisClusterConfig.getMaxIdle());
-        genericObjectPoolConfig.setMaxTotal(jedisClusterConfig.getMaxTotal());
-        genericObjectPoolConfig.setMinIdle(jedisClusterConfig.getMinIdle());
-
-        JedisCluster jedisCluster = new JedisCluster(jedisClusterConfig.getNodes(),
-                jedisClusterConfig.getConnectionTimeout(), jedisClusterConfig.getMaxRedirections());
-        return new RedisClusterContainer(jedisCluster);
+        return new RedisClusterContainer(jedisClusterConfig);
     }
 
     /**
@@ -87,18 +78,7 @@ public class RedisCommandsContainerBuilder {
      * @throws NullPointerException if jedisSentinelConfig is null
      */
     public static RedisCommandsContainer build(FlinkJedisSentinelConfig jedisSentinelConfig) {
-        Objects.requireNonNull(jedisSentinelConfig, "Redis sentinel config should not be Null");
-
-        GenericObjectPoolConfig genericObjectPoolConfig = new GenericObjectPoolConfig();
-        genericObjectPoolConfig.setMaxIdle(jedisSentinelConfig.getMaxIdle());
-        genericObjectPoolConfig.setMaxTotal(jedisSentinelConfig.getMaxTotal());
-        genericObjectPoolConfig.setMinIdle(jedisSentinelConfig.getMinIdle());
-
-        JedisSentinelPool jedisSentinelPool = new JedisSentinelPool(jedisSentinelConfig.getMasterName(),
-                jedisSentinelConfig.getSentinels(), genericObjectPoolConfig,
-                jedisSentinelConfig.getConnectionTimeout(), jedisSentinelConfig.getPassword(),
-                jedisSentinelConfig.getDatabase());
-        return new RedisContainer(jedisSentinelPool);
+        return new RedisContainer(jedisSentinelConfig);
     }
 
     /**

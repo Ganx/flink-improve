@@ -18,6 +18,8 @@
         <module>flink-iterativeStream</module>
         <module>flink-dim</module>
         <module>flink-dim-java</module>
+        <module>flink-es</module>
+        <module>flink-kudu</module>
     </modules>
 
     <properties>
@@ -26,7 +28,7 @@
         <log4j.version>2.1</log4j.version>
         <logback.verison>1.2.0</logback.verison>
         <scala.binary.version>2.11</scala.binary.version>
-        <flink.version>1.9.1</flink.version>
+        <flink.version>1.8.2</flink.version>
         <lombok.version>1.18.6</lombok.version>
         <flink-shaded-hadoop2.version>2.7.5-1.8.2</flink-shaded-hadoop2.version>
     </properties>

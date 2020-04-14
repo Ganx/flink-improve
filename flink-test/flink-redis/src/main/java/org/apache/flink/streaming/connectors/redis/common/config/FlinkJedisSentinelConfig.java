@@ -41,8 +41,8 @@ public class FlinkJedisSentinelConfig extends FlinkJedisConfigBase{
     private FlinkJedisSentinelConfig(String masterName, Set<String> sentinels,
                                      int connectionTimeout, int soTimeout,
                                      String password, int database,
-                                     int maxTotal, int maxIdle, int minIdle) {
-        super(connectionTimeout, maxTotal, maxIdle, minIdle);
+                                     int maxTotal, int maxIdle, int minIdle, int db) {
+        super(connectionTimeout, maxTotal, maxIdle, minIdle, db);
         Objects.requireNonNull(masterName, "Master name should be presented");
         Objects.requireNonNull(sentinels, "Sentinels information should be presented");
         Util.checkArgument(!sentinels.isEmpty(), "Sentinel hosts should not be empty");
@@ -112,6 +112,7 @@ public class FlinkJedisSentinelConfig extends FlinkJedisConfigBase{
         private int maxTotal = GenericObjectPoolConfig.DEFAULT_MAX_TOTAL;
         private int maxIdle = GenericObjectPoolConfig.DEFAULT_MAX_IDLE;
         private int minIdle = GenericObjectPoolConfig.DEFAULT_MIN_IDLE;
+        private int db = 0;
 
         /**
          * Sets master name of the replica set.
@@ -215,6 +216,11 @@ public class FlinkJedisSentinelConfig extends FlinkJedisConfigBase{
             return this;
         }
 
+        public Builder setDb(int db) {
+            this.db = db;
+            return this;
+        }
+
         /**
          * Builds JedisSentinelConfig.
          *
@@ -222,7 +228,7 @@ public class FlinkJedisSentinelConfig extends FlinkJedisConfigBase{
          */
         public FlinkJedisSentinelConfig build(){
             return new FlinkJedisSentinelConfig(masterName, sentinels, connectionTimeout, soTimeout,
-                    password, database, maxTotal, maxIdle, minIdle);
+                    password, database, maxTotal, maxIdle, minIdle, db);
         }
     }
 
